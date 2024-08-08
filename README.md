@@ -20,8 +20,10 @@ Aby skorzystać z funkcjonalności Better-and-Simpler-Voiceover, wystarczy:
 Aby zainstalować projekt, należy:
 
 1. Pobrać najnowszą wersję projektu z platformy GitHub.
-2. Uruchomić skrypt `setup.py` za pomocą polecenia `pip install -r requirements.txt`.
-3. Wyeksportować plik audio lub wygenerować go na bieżąco.
+2. Stwożyć venv komendą `python3.10 -m venv venv` i załadować go w terminalu `source ./venv/bin/activate.fish`.
+3. Zainstaluj *PyTorch* odpowiedniego dla twojej karty graficznej ze strony [PyTorch](https://pytorch.org/get-started/locally/).
+4. Zainstaluj pozostałe zależności `pip install -r requirements.txt`.
+4. Uruchomić skrypt `setup.py` za pomocą polecenia `python setup.py`.
 
 ## Kontakt
 Jeśli masz pytania lub chcesz przekazać swoje uwagi dotyczące projektu, możesz skontaktować się z nami za pomocą adresu e-mail: S3ba9989@proton.me.
