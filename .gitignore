@@ -125,3 +125,7 @@ dmypy.json
 
 # Gradio
 flagged
+
+# Pliki do testów
+tests_files
+
