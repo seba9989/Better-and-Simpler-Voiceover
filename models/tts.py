@@ -3,11 +3,11 @@ from glob import glob
 import torch
 from TTS.api import TTS
 
-device = "cuda" if torch.cuda.is_available() else "cpu"
 
 
 def tts_render(subs: list[dict[str, str]], voice: str):
-    print(device)
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+
     tts = TTS("tts_models/multilingual/multi-dataset/xtts_v2").to("cuda")
 
     for sub in subs:
@@ -16,7 +16,7 @@ def tts_render(subs: list[dict[str, str]], voice: str):
         start_time = sub["start"]
 
         out_path = f"tts_out/fragments/{start_time}.wav"
-        
+
         print(out_path)
 
         tts.tts_to_file(

@@ -129,3 +129,7 @@ flagged
 # Pliki do testów
 tests_files
 
+# User file
+video_out/**.mp4
+tts_out/**/*.wav
+tts_out/merged/full.mp3
